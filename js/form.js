@@ -1,4 +1,4 @@
-import Notiflix from "notiflix";
+// import Notiflix from "notiflix";
 
 const form = document.querySelector('#main');
 const button = document.querySelector('button');
@@ -28,11 +28,11 @@ function formSubmit(e) {
 
     if (error === 0) {
         alert("Ваши данные отправленны в обработку. С вами скоро свяжутся!")
-        Notiflix.Notify.success('Ваши данные отправленны в обработку. С вами скоро свяжутся!');
+        // Notiflix.Notify.success('Ваши данные отправленны в обработку. С вами скоро свяжутся!');
        
     } else {
         alert("Данные введены не корректно!!!")
-        Notiflix.Notify.failure('Данные введены не корректно!!!');
+        // Notiflix.Notify.failure('Данные введены не корректно!!!');
         
     }
 }
