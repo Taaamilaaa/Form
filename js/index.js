@@ -60,7 +60,7 @@ function formValidate(form) {
             }
         } else if (input.classList.contains('_phone')) {           
             let re = /\b[+]?[-0-9\(\) ]{11,20}\b/; 
-            
+
             if (input.value.match(re) === null) {
                 formAddError(input);
                 error++;
@@ -77,9 +77,9 @@ function formAddError(input) {
     input.classList.add('_error');    
 
     if (input.id === 'name') {
-        label.innerHTML = '*Пишите кирилицей';
+        label.innerHTML = '*Пишите на кирилице';
     } else if (input.id === 'age') {
-        label.innerHTML = '*Укажите свой возраст.';
+        label.innerHTML = '*Укажите свой возраст';
     } else if (input.id === 'phone') {
         label.innerHTML = '*Некорректно введен номер';
     }
