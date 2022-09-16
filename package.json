@@ -1,6 +1,5 @@
 {
-    "dependencies": {
-        "jquery.maskedinput": "^1.4.1",
-        "notiflix": "^3.2.5"
-    }
+  "dependencies": {
+    "notiflix": "^3.2.5"
+  }
 }
