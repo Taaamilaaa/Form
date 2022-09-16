@@ -10,45 +10,59 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./node_modules/notiflix/dist/notiflix-3.2.5.min.css" />
     <title>Запишись на урок!</title>
 </head>
 
 <body>
     <section class="container">
-        <div class="section__container">
-            <div>
-                <h3 class="title">Онлайн-уроки </br> по 25 минут</h3>
-                <span>Прокачай разговорный английский</span>
+        <div class="form">
+            <div class="form__hero">
+                <h3 class="form__title">Онлайн-уроки </br> по 25 минут</h3>
+                <span class="form__text">Прокачай разговорный английский</span>
             </div>
 
-            <form class="form" name="main"  action="" method="">
+            <form class="form__body" id="main" name="main" action="#">
 
-                <div class="form__input">
+                <div class="form__input-wraper">
 
                     <div class="form__input-flex">
 
-                        <label for="name"></label>
-                        <input class="input" id="name" type="text" name="name" placeholder="Имя" />
+                        <div class="_reqCont">
+                            <input class="form__input _name _req" id="name" type="text" name="name" placeholder="Имя" />
+                            <label class="reqLab" for="name"></label>
+                        </div>
 
 
-                        <label for="age"></label>
-                        <input class="input" id="age" type="text" name="age" placeholder="Возраст" />
+                        <div class="_reqCont">
+                            <input class="form__input _age _req" id="age" type="text" name="age"
+                                placeholder="Возраст" />
+                            <label class="reqLab" for="age"></label>
+                        </div>
 
                     </div>
 
-                    <label for="phone"></label>
-                    <input class="input" id="phone" type="text" name="phone" placeholder="tel" />
+                    <div class="_reqCont">
+                        <input class="form__input _phone _req " id="phone" type="text" name="phone"
+                            placeholder="+ 38(0 _ _) _ _ _ _ _ _ _" />
+                        <label class="reqLab" for="phone"></label>
+                    </div>
 
                 </div>
-                <input class="checkbox" type="checkbox" name="child" id="child" />
-                <label class="label" for="child">Для детей и школьников</label>                
-                
-                <button type="submit" disabled>Записаться на урок</button>
+                <div class="form__checkbox-container">
+                    <input class="checkbox" type="checkbox" name="child" id="child" />
+                    <label class="label" for="child">Для детей и школьников</label>
+                </div>
+
+                <button type="submit" disabled=true>Записаться на урок</button>
             </form>
-        </div>
+
     </section>
     <script src="./js/index.js" type="module"></script>
-    <script src="./js/masck.js" type="module"></script>
+    <script src="./node_modules/notiflix/dist/notiflix-notify-aio-3.2.5.min.js"></script>
+    <!-- <script src="./js/jQuery.js"></script> -->
+    <!-- <script src="jquery.maskedinput.min.js"></script> -->
+
 </body>
 
 </html>
