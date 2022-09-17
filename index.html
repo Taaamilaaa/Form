@@ -10,8 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./CSS/styles.css" />
-   
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <title>Запишись на урок!</title>
+
 </head>
 
 <body>
@@ -44,7 +46,7 @@
 
                     <div class="_reqCont">
                         <input class="form__input _phone _req " id="phone" type="text" name="phone"
-                            placeholder="+ 38(0 _ _) _ _ _ _ _ _ _" />
+                            placeholder="+38(___) ___-____" />
                         <label class="reqLab" for="phone"></label>
                     </div>
 
@@ -59,10 +61,16 @@
 
     </section>
     <script src="./index.js" type="module"></script>
-    
-    
-    <!-- <script src="./js/jQuery.js"></script> -->
-    <!-- <script src="jquery.maskedinput.min.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/maskinput.js"></script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $("#phone").mask("+38(999) 999-9999");
+        });
+    </script>
+
 
 </body>
 
