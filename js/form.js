@@ -22,7 +22,7 @@ function buttonDisabled(e) {
 
 function formSubmit(e) {
     e.preventDefault();
-    
+
     let error = formValidate(e.target);
 
     if (error === 0) {
@@ -30,7 +30,9 @@ function formSubmit(e) {
 
         reqInputs.forEach(input => {
             input.value = '';
+            
         });
+        button.disabled = true;
     } else {
         toastError.showToast();
     }
